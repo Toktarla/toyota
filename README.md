@@ -1,5 +1,5 @@
 # Toyota Sales
-URL : https://toyotasales-2615d6c828ac.herokuapp.com
+URL : https://toyotasales-2615d6c828ac.herokuapp.com (I used heroku eco dyno , it can be a little laggy)
 Admin login: toktarwow
 Admin password: toktarwow123
 
