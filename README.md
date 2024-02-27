@@ -1,5 +1,13 @@
 # Toyota Sales
-URL : https://toyota.onrender.com/
+URL : https://toyotasales-2615d6c828ac.herokuapp.com
+Admin login: toktarwow
+Admin password: toktarwow123
+
+In search page enter:
+Make: Toyota Mercedes-Benz BMW 
+Model: Corolla Camry rav4 M5 
+
+
 ## Prerequisites
 
 - Node.js installed

@@ -32,13 +32,14 @@ router.get('/edit-user/:id', async (req, res) => {
 router.post('/update-user/:id', async (req, res) => {
     const { name, email, password, adminStatus } = req.body;
 
+    if (!/^\S+@\S+\.\S+$/.test(email)) {
+        return res.status(400).send('Invalid email format');
+    }
+
+   
+
     try {
-        const updates = {
-            name,
-            email,
-            adminStatus: adminStatus === 'on',
-            updateDate: new Date(),
-        };
+        const updates = { name, email, adminStatus: adminStatus === 'on', updateDate: new Date() };
 
         if (password) {
             updates.password = await bcrypt.hash(password, saltRounds);
